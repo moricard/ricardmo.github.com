@@ -7,6 +7,7 @@ source:      .
 destination: ./_site
 plugins:     ./_plugins
 
+permalink: pretty
 pygments:   true
 lsi:        false
 
