@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Designing this blog
-tags: design, blog, css
 ---
 
 Simple does not mean boring, let's make something beautiful out of this. I am not a designer but I believe I am creative enough to come up with something original and good looking on my own. Here are the steps that I went through while designing this blog.
@@ -56,12 +55,12 @@ You can see the whole source on the [Github repo](https://github.com/ricardmo/ri
 Once the repository is set up, cloning it on my machine and then copying the whole file structure we created in the [previous post]({% post_url 2013-01-01-makingof %}) in the repo was all I needed to do.
 
 {% highlight bash %}
-$ git clone git@github.com:ricardmo/ricardmo.github.com.git
-$ copy -r blog/* ricardmo.github.com
-$ cd !$
-$ git add .
-$ git commit -m "initial commit"
-$ git push
+% git clone git@github.com:ricardmo/ricardmo.github.com.git
+% copy -r blog/* ricardmo.github.com
+% cd !$
+% git add .
+% git commit -m "initial commit"
+% git push
 {% endhighlight %}
 
 And that's it, 10 minutes later we have a free hosted blog.
