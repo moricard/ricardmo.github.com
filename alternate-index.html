@@ -1,0 +1,50 @@
+---
+layout: default
+title: Home
+---
+
+<div id="content" class="container content">
+
+  {% for post in site.posts %}
+
+  <div class="row post-item">
+
+    <div class="threecol date-published">
+
+      {{ post.date || date_to_string }}
+
+    </div>
+
+      <style>
+
+        p {
+          text-shadow: none;
+        }
+        a {
+          color: #1bb5e0;
+          text-shadow: none;
+        }
+
+        h2 a {
+         color: #1bb5e0;
+        }
+
+      </style>
+
+    <div class="sixcol" style="background: #fefefe !important; margin: -26px -38px 0px -38px; padding: 26px 38px 0px 38px; border-left: 1px solid #097392; border-right: 1px solid #097392;">
+
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+      <div class="post-content" >
+
+          {{ post.content }}
+
+      </div>
+
+    </div>
+
+  </div>
+
+  {% endfor %}
+
+</div>

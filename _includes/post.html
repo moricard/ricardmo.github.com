@@ -1,29 +1,19 @@
+{% raw %}
 ---
 layout: default
 ---
 
 <div class="container post-container">
-
   <div class="row post-single-page">
-
     <div class="threecol date-published">
-
       {{ page.date || date_to_string }}
-
     </div>
-
     <div class="sixcol">
-
       <h2><a href="{{ post.url }}">{{ page.title }}</a></h2>
-
       <div class="content post-content">
-
           {{ content }}
-
       </div>
-
     </div>
-
   </div>
-
 </div>
+{% endraw %}
