@@ -77,4 +77,4 @@ To deploy on the raspberry pi, since we are already running a web server serving
 % jekyll --no-server && rsync -avz --delete _site/ root@raspberrypi.local:/usr/share/nginx/www/
 {% endhighlight %}
 
-That's it, we now have a working blog. It's pretty ugly really, so next time I will guide you through the design of this blog. [Part II here]({% post_url 2013-01-02-blogdesign %})
+That's it, we now have a working blog. It's pretty ugly really, so next time I will guide you through the design of this blog. [Part II here](/2013/01/02/blogdesign.html)

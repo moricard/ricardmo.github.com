@@ -52,7 +52,7 @@ The process of developing the frontend was as simple as running jekyll in auto r
 {% endhighlight %}
 
 You can see the whole source on the [Github repo](https://github.com/ricardmo/ricardmo.github.com/). For simplicity, I decided to host this blog on Github pages at the moment since I don't have a dynamic dns set up for my initial plan of hosting this on my raspberry pi. It was as simple as creating a Github repository named `ricardmo.github.com`, note that it is important that the name of the repo is `yourusername.github.com` or else pages won't work.
-Once the repository is set up, cloning it on my machine and then copying the whole file structure we created in the [previous post]({% post_url 2013-01-01-makingof %}) in the repo was all I needed to do.
+Once the repository is set up, cloning it on my machine and then copying the whole file structure we created in the [previous post](/2013/01/01/makingof.html) in the repo was all I needed to do.
 
 {% highlight bash %}
 % git clone git@github.com:ricardmo/ricardmo.github.com.git
