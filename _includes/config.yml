@@ -1,0 +1,11 @@
+safe:    true
+auto:    true
+server:  true
+baseurl: /
+
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+
+pygments:   true
+lsi:        false

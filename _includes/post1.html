@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="container post-container">
+
+  {% raw %}
+      {{ page.date || date_to_string }}
+
+
+      <h2><a href="{{ post.url }}">{{ page.title }}</a></h2>
+
+      <div class="content post-content">
+
+          {{ content }}
+
+      </div>
+  {% endraw %}
+
+</div>

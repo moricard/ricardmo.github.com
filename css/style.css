@@ -1,0 +1,218 @@
+@import url(http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+/* Top shadow */
+body:before {
+    content: "";
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+
+    z-index: 100;
+}
+
+body {
+    font-size: 16px;
+    line-height: 26px;
+    background-color: #1bb5e0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-shadow: 0px 1px 1px #7CD6F0;
+}
+
+article {
+    max-width: 944px;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight:400;
+    font-size: 110px;
+    text-shadow: 0px 1px 1px #7CD6F0;
+    line-height: 130px;
+    margin-top: 26px;
+    margin-bottom: 52px;
+}
+
+.brand a {
+    color: #000;
+    text-shadow: 0px 1px 1px #7CD6F0;
+}
+
+.brand {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 400;
+    text-align: right;
+}
+
+h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 42px;
+    font-weight:700;
+    line-height: 52px;
+    margin-top: 52px;
+    margin-bottom: 26px;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #fefefe;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 26px;
+    margin-bottom: 0px;
+}
+
+p, ul{
+    margin-top: 0px;
+    margin-bottom: 26px;
+}
+
+small, aside {
+    font-size: 10px;
+}
+
+a {
+    color: #fefefe;
+    text-shadow: 0px -1px 1px #097392;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 1px 2px 3px #097392;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 16px;
+}
+
+.page-header{
+    border-bottom: 1px dashed #7CD6F0;
+}
+
+.content {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+.page-header {
+    padding-bottom: 26px;
+    padding-top: 26px;
+}
+
+.date-published {
+    Text-align: right;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight:900;
+    text-shadow: 0px 1px 1px #7CD6F0;
+}
+
+.post-item {
+    padding-top: 26px;
+
+}
+
+.post-resume {
+    color: #097392;
+    text-shadow: 0px 1px 0px #7CD6F0;
+}
+
+.post-resume > p {
+    font-family: 'Cinzel Decorative', cursive !important;
+    font-weight: 400 !important;
+}
+
+.post-single-page {
+    padding-top: 26px;
+    padding-bottom: 26px;
+
+}
+
+.post-container {
+    min-height: 400px;
+      /* box-shadow */
+    -webkit-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+    -moz-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+    box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+    min-height: 400px;
+
+}
+
+.post-content {
+    padding-bottom: 26px;
+    border-bottom: 1px dashed #7CD6F0;
+}
+
+.post-content p {
+    text-align: justify;
+    text-indent: 26px;
+    margin: 26px 12px 26px 0px; /* top right bottom left*/
+}
+
+.post-content h3, h2, h4 {
+    border-bottom: 1px dashed #7CD6F0;
+    margin-top: 52px;
+    color: #fefefe;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 400;
+    text-shadow: 0px -1px 1px #097392;
+}
+
+.post-content code {
+    border: 1px solid #097392;
+    border-radius: 5px;
+    padding: 0px 3px 0px 3px;
+    background-color: #2D2D2D;
+    color: #7CD6F0;
+    text-shadow: none;
+    font-size: 12px;
+}
+
+.post-content .highlight code {
+    padding: 0px 0px 0px 0px;
+    border: none;
+}
+
+.highlight {
+    background-color: #2D2D2D;
+    color: #7CD6F0;
+    line-height: 14px;
+    padding: 12px 12px 12px 12px;
+    text-shadow: none;
+    border-radius: 5px;
+    -webkit-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+    -moz-box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+    box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
+    overflow-x: scroll;
+}
+
+.presentation {
+    text-align: center;
+}
+
+#footer a {
+    color: #ff8d18;
+    text-shadow: none;
+    text-decoration: underline;
+}
+
+#footer {
+    background: #fefefe;
+    padding: 26px;
+}
