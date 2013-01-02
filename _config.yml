@@ -9,3 +9,5 @@ plugins:     ./_plugins
 
 pygments:   true
 lsi:        false
+
+ga_id:      UA-37375728-1
