@@ -9,7 +9,7 @@ Simple does not mean boring, let's make something beautiful out of this. I am no
 
 First thing we need is some kind of structure. I have some experience using [Twitter Bootstrap](http://twitter.github.com/bootstrap/) and even though it's powerful, I didn't need that much of a framework for the frontend.
 
-All I really needed was a grid that was responsive to various screen sizes. I found this very simple grid [1140Grid](http://cssgrid.net) that does just that and weights only `2kb`. Here is the scaffolded post template.
+All I really needed was a grid that was responsive to various screen sizes. I found this very simple grid [1140Grid](http://cssgrid.net) that does just that and weights only `2kb`. Here is the scaffolded post template. *Note: the space between two { { is only there so Liquid does not interpret them.*
 
 {% highlight html %}
 {% include post.html %}
@@ -42,6 +42,10 @@ a {
     text-shadow: 0px -1px 1px #097392;
 }
 {% endhighlight %}
+
+### [Code Highlighting](#code_hilighting)
+
+There is going to be a substential amount of code sharing here so I needed to write some css styles that [Pygments](http://pygments.org) recognizes. I was lazy and instead of building them, I borrowed from [@richleland](https://github.com/richleland/pygments-css) and made a couple modifications to the `monokai.css`.
 
 ### [Putting it all together](#putting_it_all_together)
 
