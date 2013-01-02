@@ -1,6 +1,8 @@
-@import url(http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url('http://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url('monokai.css');
 /* Top shadow */
+
 body:before {
     content: "";
     position: fixed;
@@ -38,17 +40,6 @@ h1 {
     line-height: 130px;
     margin-top: 26px;
     margin-bottom: 52px;
-}
-
-.brand a {
-    color: #000;
-    text-shadow: 0px 1px 1px #7CD6F0;
-}
-
-.brand {
-    font-family: 'Cinzel Decorative', cursive;
-    font-weight: 400;
-    text-align: right;
 }
 
 h2 {
@@ -96,6 +87,22 @@ ul {
     list-style: none;
 }
 
+/**
+ * Top Logo
+ */
+
+.brand a {
+    color: #000;
+    text-shadow: 0px 1px 1px #7CD6F0;
+}
+
+.brand {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 400;
+    text-align: right;
+}
+
+
 .nav ul li {
     display: inline;
     margin-right: 16px;
@@ -103,17 +110,19 @@ ul {
 
 .page-header{
     border-bottom: 1px dashed #7CD6F0;
+    padding-bottom: 26px;
+    padding-top: 26px;
 }
+
+
+/**
+ * Content
+ */
 
 .content {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-}
-
-.page-header {
-    padding-bottom: 26px;
-    padding-top: 26px;
 }
 
 .date-published {
@@ -141,7 +150,6 @@ ul {
 .post-single-page {
     padding-top: 26px;
     padding-bottom: 26px;
-
 }
 
 .post-container {
@@ -153,6 +161,10 @@ ul {
     min-height: 400px;
 
 }
+
+/**
+ * Inside of a post
+ */
 
 .post-content {
     padding-bottom: 26px;
@@ -189,6 +201,10 @@ ul {
     border: none;
 }
 
+/**
+ * Code highlighting
+ */
+
 .highlight {
     background-color: #2D2D2D;
     color: #7CD6F0;
@@ -201,6 +217,10 @@ ul {
     box-shadow: rgba(0,0,0,0.2) 0px 1px 3px;
     overflow-x: scroll;
 }
+
+/**
+ * Bottom of the page
+ */
 
 .presentation {
     text-align: center;
