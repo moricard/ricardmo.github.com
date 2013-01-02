@@ -7,7 +7,7 @@ So here we are, it is the first day of the year 2013 and as a good resolution, I
 
 
 
-This blog +is+ will be running on a raspberry pi in my living room and I tought as a first post, I could try and document the making of this setup.
+This blog <s>is running</s> will be running on a raspberry pi in my living room and I tought as a first post, I could try and document the making of this setup.
 
 ### [The Plan](#the_plan)
 
