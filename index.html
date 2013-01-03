@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Home
+title: Marc O's blog
 ---
 
 <div id="content" class="container content">
 
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
 
   <div class="row post-item">
 
@@ -33,5 +33,46 @@ title: Home
   </div>
 
   {% endfor %}
+  <div class="row twelvecol">
+    <div class="threecol"></div>
+    <div class="paginator sixcol">
+
+      <div class="fourcol">
+      {% if paginator.previous_page %}
+
+        {% if paginator.previous_page == 1 %}
+
+          <a href="/"> < Previous </a>
+
+        {% else %}
+
+            <a href="/page{{paginator.previous_page}}" class="previous">Previous</a>
+
+        {% endif %}
+
+        {% else %}
+
+            <span class="previous">Previous</span>
+
+      {% endif %}
+      </div>
+
+      <span class="page_number fourcol">{{paginator.page}} of {{paginator.total_pages}}</span>
+
+      <div class="fourcol next last">
+        {% if paginator.next_page %}
+
+        <a href="/page{{paginator.next_page}}" class="next ">Next</a>
+
+        {% else %}
+
+        <span class="next ">Next</span>
+
+        {% endif %}
+      </div>
+
+    </div>
+
+  </div>
 
 </div>

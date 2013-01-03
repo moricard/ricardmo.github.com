@@ -7,8 +7,9 @@ source:      .
 destination: ./_site
 plugins:     ./_plugins
 
-permalink: pretty
+permalink:  pretty
 pygments:   true
 lsi:        false
+paginate:   5
 
 ga_id:      UA-37375728-1
