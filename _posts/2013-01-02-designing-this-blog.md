@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Designing this blog
+tags: css html design
 ---
 
 

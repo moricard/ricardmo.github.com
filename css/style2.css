@@ -131,6 +131,13 @@ h2 a {
     color: #ff9517;
 }
 
+.tags {
+    color: #1877aa !important;
+    font-family: 'Monda', sans-serif;
+    font-size: 10px;
+    text-indent: 0px;
+}
+
 
 a:hover {
     color: #e11460;
