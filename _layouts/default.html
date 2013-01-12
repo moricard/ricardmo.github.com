@@ -5,13 +5,7 @@
 
     <meta charset=utf-8>
 
-    <link rel="stylesheet" href="/css/style.css" media="screen">
-
-    <link rel="stylesheet" href="/css/1140.css" media="screen" />
-
-    <!--[if IE]>
-        <link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen" />
-    <![endif]-->
+    <link rel="stylesheet" href="/css/style2.css" media="screen">
 
     <title>{{ page.title }}</title>
 
@@ -19,56 +13,19 @@
 
   <body>
 
-    <div id="header" class="page-header container">
-
-      <div class="row twelvecol">
-
-        <div class="threecol brand">
-
-          <a href="/"><h3>Marc O. Ricard</h3></a>
-
-        </div>
-
-        <div class="sixcol nav">
-
-          <ul>
-
-            <li class="git">
-              <a href="https://github.com/ricardmo"><img src="/images/github.png" alt="github logo"/> </a>
-            </li>
-
-            <li>
-              <a href="/archive/">Archive</a>
-            </li>
-
-          </ul>
-
-        </div>
-
-      </div>
-
-    </div>
 
     {{ content }}
 
-    <div id="footer" class="container">
 
-      <div class="row twelvecol presentation">
-
-          <a href="mailto:marco.ricard@gmail.com">Marc-Olivier Ricard</a> is a mathematician, a computer programmer and currently employed as an analyst @ <a href="http://www.keatext.com">keatext</a>.
+    <footer>
+          <a href="mailto:marco.ricard@gmail.com">Marc-Olivier Ricard</a> is a mathematician, a computer programmer and currently employed as a programmer analyst @ <a href="http://www.keatext.com">keatext</a>.
 
           <p>
             <small>
               I'm also a musician, loving husband, food lover, retired bartender, wine enthusiast, beer brewer.
             </small>
-            I'm curious.
           </p>
-
-      </div>
-
-    </div>
-
-<a href="https://github.com/ricardmo/ricardmo.github.com"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    </footer>
 
 {% unless site.ga_id == nil or site.ga_id == empty %}
 
@@ -90,17 +47,6 @@
 
     </script>
 {% endunless %}
-
-    <script type="text/javascript">
-    var disqus_shortname = 'ricardmo';
-
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-    </script>
 
   </body>
 

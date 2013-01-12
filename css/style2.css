@@ -1,0 +1,185 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url('http://fonts.googleapis.com/css?family=Monda:400,700');
+@import url('github.css');
+/* Top shadow */
+
+html {
+    min-width: 1040px;
+}
+
+body:before {
+    content: "";
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #11bb5e;
+    box-shadow: 0px 0px 16px rgba( 17, 187, 94, .8 );
+    z-index: 100;
+}
+
+body {
+    font-size: 16px;
+    line-height: 26px;
+    background-color: #fefefe;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #010f07;
+    margin: 1em auto 4em auto;
+    width: 1140px;
+    min-width: 1140px;
+    text-align: justify;
+    position: relative;
+}
+
+
+h1 {
+    font-family: 'Monda', sans-serif;
+    font-weight:700;
+    font-size: 110px;
+    text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.7);
+    line-height: 130px;
+    margin: 26px 0 52px 0;
+}
+
+/* First paragraph of page */
+body > p:first-of-type {
+    font-size: 26px;
+    margin: 0px 20px 52px; 20px;
+    padding-right: 20px;
+    border-right: 1px solid #e0e0e0;
+}
+
+.date-published {
+    left: 780px;
+    border: none;
+    font-size: 16px;
+}
+
+
+h2 {
+    font-family: 'Monda', sans-serif;
+    font-size: 42px;
+    font-weight:700;
+    line-height: 52px;
+    margin: 52px 0px 26px 0px;
+    width: 340px;
+    text-align: right;
+    padding: 0px 20px 0px 0px;
+    position: absolute;
+    left: 0px;
+    border-right: 1px solid #e0e0e0;
+}
+
+h2:first-of-type {
+    margin: 26px 0px 0px 0px;
+}
+
+h2 + p {
+    margin: 78px 20px 26px 380px !important;
+}
+
+h3 {
+    font-family: 'Monda', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 26px 0px 0px 380px;
+}
+
+body > p {
+    text-indent: 26px;
+    margin: 0px 20px 26px 380px;
+    width: 740px;
+}
+
+small, aside{
+    font-size: 10px;
+}
+
+aside {
+    position: absolute;
+    font-family: 'monda', sans-serif;
+    font-weight: 400;
+    left: 0px;
+    width: 320px;
+    padding: 0px 20px 0px 20px;
+    border-right: 1px solid #e0e0e0;
+}
+
+aside a{
+    color: #1877aa;
+}
+
+
+p > a {
+    font-weight: bold;
+}
+
+a {
+    color: #11bb60;
+    text-decoration: none;
+}
+
+h1 a, h2 a {
+    text-shadow: 0px -1px 1px rgba( 0, 0, 0, 0.7),
+                 0px  1px 1px #fff;
+}
+
+h2 a {
+    color: #ff9517;
+}
+
+
+a:hover {
+    color: #e11460;
+}
+
+h1 a:hover {
+    color: #e11460;
+}
+
+p > code {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 0px 3px 0px 3px;
+    font-size: 12px;
+}
+
+.highlight {
+    width: 760px;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0px 12px 26px 360px;
+    padding: 0px 0px 0px 20px;
+    overflow-x: scroll;
+    border-left: 1px solid #e0e0e0;
+}
+
+footer {
+    margin: 52px 0px 26px 0px;
+    font-size: 10px;
+    font-family: 'monda', sans-serif;
+    text-align: center;
+    bottom: 0px;
+}
+
+.master {
+    text-align: center;
+    letter-spacing: -0.05em;
+
+}
+
+span.twist {
+    display: inline-block;
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    font-size: 120px;
+    letter-spacing: 0.08em;
+    vertical-align: -0.15em;
+}
+
+.front-date {
+    text-align: right;
+}

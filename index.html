@@ -1,78 +1,14 @@
 ---
 layout: default
-title: Marc O's blog
+title: Ricard, Marc O.
 ---
+<h1 class="master"><a href="/"><span class="twist">F</span>an <span class="twist">F</span>are &nbsp;<span class="twist">F</span>antastique</a></h1>
+<aside class="date-published">By Marc-Olivier Ricard</aside>
 
-<div id="content" class="container content">
+<p>{{ site.posts | size }} things explained by me.</p>
 
-  {% for post in paginator.posts %}
-
-  <div class="row post-item">
-
-    <div class="threecol date-published">
-
-      {{ post.date || date_to_string }}
-
-    </div>
-
-    <div class="sixcol">
-
+  {% for post in site.posts %}
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <small><a href="{{ post.url }}#disqus_thread"></a></small>
-
-      <div class="post-content">
-
-          {{ post.content }}
-
-          <small><a href="{{ post.url }}#disqus_thread"></a></small>
-
-      </div>
-
-    </div>
-
-  </div>
-
+      {{ post.content | first }}
+      <aside class="front-date">{{ post.date || date_to_string }}</aside>
   {% endfor %}
-  <div class="row twelvecol">
-    <div class="threecol"></div>
-    <div class="paginator sixcol">
-
-      <div class="fourcol">
-      {% if paginator.previous_page %}
-
-        {% if paginator.previous_page == 1 %}
-
-          <a href="/"> < Previous </a>
-
-        {% else %}
-
-            <a href="/page{{paginator.previous_page}}" class="previous">Previous</a>
-
-        {% endif %}
-
-        {% else %}
-
-            <span class="previous">Previous</span>
-
-      {% endif %}
-      </div>
-
-      <span class="page_number fourcol">{{paginator.page}} of {{paginator.total_pages}}</span>
-
-      <div class="fourcol next last">
-        {% if paginator.next_page %}
-
-        <a href="/page{{paginator.next_page}}" class="next ">Next</a>
-
-        {% else %}
-
-        <span class="next ">Next</span>
-
-        {% endif %}
-      </div>
-
-    </div>
-
-  </div>
-
-</div>

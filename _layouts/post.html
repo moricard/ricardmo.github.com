@@ -1,71 +1,23 @@
 ---
 layout: default
 ---
+      <h1><a href="/">{{ page.title }}</a></h1>
 
-<div class="container post-container">
-
-  <div class="row post-single-page">
-
-    <div class="threecol date-published">
+    <aside class="date-published">
 
       {{ page.date || date_to_string }}
+      <br>
+      <a href="/">Marc-Olivier Ricard</a>
 
-    </div>
-
-    <div class="sixcol">
-
-      <h2><a href="{{ post.url }}">{{ page.title }}</a></h2>
-
-      <small><a href="{{ post.url }}#disqus_thread"></a></small>
-
-      <div class="content post-content">
+    </aside>
 
           {{ content }}
+    <footer id="pager">
+          {% if page.previous.title %}
+          <a href="{{ page.previous.url }}">( {{ page.previous.title }} ) < Previous </a>
+          {% endif %}
 
-      <div class="twelvecol paginator">
-
-        <div class="sixcol">
-
-          <a href="{{ page.previous.url }}">< Previous</a>
-
-        </div>
-
-        <div class="sixcol last next">
-
-          <a href="{{ page.next.url }}">Next > </a>
-
-        </div>
-
-      </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
- <div class="row">
-
-    <div class="threecol"></div>
-
-    <div id="disqus_thread" class="sixcol"></div>
-      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
-
-</div>
-
-<script type="text/javascript">
-
-  var disqus_shortname = 'ricardmo';
-
-  (function() {
-      var dsq = document.createElement('script');
-      dsq.type = 'text/javascript';
-      dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
-
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          {% if page.next.title %}
+          <a href="{{ page.next.url }}"> Next > ( {{ page.next.title }} )</a>
+          {% endif %}
+          </footer>
