@@ -44,6 +44,7 @@ h1 {
 }
 
 /* First paragraph of page */
+article > p:first-of-type,
 body > p:first-of-type {
     font-size: 26px;
     margin: 0px 20px 52px; 20px;
@@ -88,7 +89,7 @@ h3 {
     margin: 26px 0px 0px 380px;
 }
 
-body > p {
+body > p, article > p {
     text-indent: 26px;
     margin: 0px 20px 26px 380px;
     width: 740px;
@@ -182,9 +183,12 @@ span.twist {
     display: inline-block;
     -webkit-transform: rotate(40deg);
     -moz-transform: rotate(40deg);
-    font-size: 120px;
     letter-spacing: 0.08em;
     vertical-align: -0.15em;
+}
+
+h1 > span.twist {
+    font-size: 120px;
 }
 
 .front-date {

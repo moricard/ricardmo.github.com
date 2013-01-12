@@ -11,8 +11,9 @@ layout: default
       <br>
       <a href="https://github.com/ricardmo"><img src="/images/github.png" alt="github"></img></a>
     </aside>
-
+    <article>
           {{ content }}
+    </article>
     <footer id="pager">
           {% if page.previous.title %}
           <a href="{{ page.previous.url }}">( {{ page.previous.title }} ) < Previous </a>
@@ -21,4 +22,4 @@ layout: default
           {% if page.next.title %}
           <a href="{{ page.next.url }}"> Next > ( {{ page.next.title }} )</a>
           {% endif %}
-          </footer>
+    </footer>
